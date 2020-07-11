@@ -9,6 +9,15 @@
 #import "MyMath.h"
 
 @implementation MyMath
+/// Static member
+///
+/// 在 Swift 中 static member 屬於全域變數, 宣告方式如下
+/// ```swift
+/// class MyMath {
+///     static var idenifier:String { "MYMATH" }
+/// }
+/// ```
+///
 + (NSString *)identifier {
     return @"MYMATH";
 }

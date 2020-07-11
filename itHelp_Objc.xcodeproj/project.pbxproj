@@ -93,6 +93,8 @@
 		9AFE9F9624B9B83D0040EAF7 /* MyMath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyMath.m; sourceTree = "<group>"; };
 		9AFE9F9724B9B83D0040EAF7 /* MyMath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyMath.h; sourceTree = "<group>"; };
 		9AFE9F9E24B9B8D90040EAF7 /* CoreTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreTests.m; sourceTree = "<group>"; };
+		9AFE9FA024B9BD800040EAF7 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		9AFE9FA224B9C3090040EAF7 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,6 +134,8 @@
 		9AB8D69C24B9B75C00515002 = {
 			isa = PBXGroup;
 			children = (
+				9AFE9FA024B9BD800040EAF7 /* README.md */,
+				9AFE9FA124B9C2DD0040EAF7 /* Articles */,
 				9AB8D6A924B9B78300515002 /* objc_iOS */,
 				9AB8D6C524B9B78B00515002 /* objc_iOSTests */,
 				9AB8D6D524B9B7E900515002 /* Core */,
@@ -204,6 +208,14 @@
 				9AFE9F9724B9B83D0040EAF7 /* MyMath.h */,
 			);
 			path = Math;
+			sourceTree = "<group>";
+		};
+		9AFE9FA124B9C2DD0040EAF7 /* Articles */ = {
+			isa = PBXGroup;
+			children = (
+				9AFE9FA224B9C3090040EAF7 /* README.md */,
+			);
+			path = Articles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
