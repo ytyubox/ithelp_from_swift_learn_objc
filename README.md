@@ -30,4 +30,4 @@
 
 ## About me
 
-歡迎到我的 twitter 拜訪！ [@@YuTsungYu](https://twitter.com/YuTsungYu)
+歡迎到我的 twitter 拜訪！ [@YuTsungYu](https://twitter.com/YuTsungYu)
