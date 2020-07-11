@@ -27,3 +27,7 @@
 ## Issues && Pull Request are appreciated
 
 如果你有想知道的部分，或是文章有誤、需要補充的，歡迎各種形式的回饋。
+
+## About me
+
+歡迎到我的 twitter 拜訪！ [@@YuTsungYu](https://twitter.com/YuTsungYu)
