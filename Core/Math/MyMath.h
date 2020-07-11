@@ -11,6 +11,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface MyMath : NSObject
++ (NSString*) identifier;
 
 - (int) toAdd:(int) lValue
             r:(int) rValue;

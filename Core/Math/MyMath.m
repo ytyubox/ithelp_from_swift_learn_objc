@@ -9,6 +9,9 @@
 #import "MyMath.h"
 
 @implementation MyMath
++ (NSString *)identifier {
+    return @"MYMATH";
+}
 - (int)toAdd: (int) lValue
            r: (int) rValue
 {
