@@ -4,7 +4,7 @@ about: 作為更新文章的起點
 title: "[文章相關] "
 labels: documentation
 assignees: ytyubox
-projects： 1
+project： 1
 
 ---
 
