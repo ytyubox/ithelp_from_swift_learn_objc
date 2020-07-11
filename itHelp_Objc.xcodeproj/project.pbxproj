@@ -70,6 +70,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		9AA6743C24B9E9B400091283 /* FUNDING.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = FUNDING.yml; sourceTree = "<group>"; };
+		9AA6743E24B9E9B400091283 /* Article_change.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = Article_change.md; sourceTree = "<group>"; };
+		9AA675D324B9E9CA00091283 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		9AB8D6A724B9B78300515002 /* objc_iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = objc_iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9AB8D6AA24B9B78300515002 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		9AB8D6AB24B9B78300515002 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -131,15 +134,50 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9AA6743B24B9E9B400091283 /* .github */ = {
+			isa = PBXGroup;
+			children = (
+				9AA6743C24B9E9B400091283 /* FUNDING.yml */,
+				9AA6743D24B9E9B400091283 /* ISSUE_TEMPLATE */,
+			);
+			path = .github;
+			sourceTree = "<group>";
+		};
+		9AA6743D24B9E9B400091283 /* ISSUE_TEMPLATE */ = {
+			isa = PBXGroup;
+			children = (
+				9AA6743E24B9E9B400091283 /* Article_change.md */,
+			);
+			path = ISSUE_TEMPLATE;
+			sourceTree = "<group>";
+		};
+		9AA675D524B9EA3E00091283 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				9AB8D6A924B9B78300515002 /* objc_iOS */,
+				9AB8D6C524B9B78B00515002 /* objc_iOSTests */,
+			);
+			path = iOS;
+			sourceTree = "<group>";
+		};
+		9AA675D624B9EA6600091283 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9AB8D6D524B9B7E900515002 /* Core */,
+				9AB8D6E224B9B7EA00515002 /* CoreTests */,
+			);
+			path = Frameworks;
+			sourceTree = "<group>";
+		};
 		9AB8D69C24B9B75C00515002 = {
 			isa = PBXGroup;
 			children = (
+				9AA675D324B9E9CA00091283 /* .gitignore */,
+				9AA6743B24B9E9B400091283 /* .github */,
 				9AFE9FA024B9BD800040EAF7 /* README.md */,
 				9AFE9FA124B9C2DD0040EAF7 /* Articles */,
-				9AB8D6A924B9B78300515002 /* objc_iOS */,
-				9AB8D6C524B9B78B00515002 /* objc_iOSTests */,
-				9AB8D6D524B9B7E900515002 /* Core */,
-				9AB8D6E224B9B7EA00515002 /* CoreTests */,
+				9AA675D524B9EA3E00091283 /* iOS */,
+				9AA675D624B9EA6600091283 /* Frameworks */,
 				9AB8D6A824B9B78300515002 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -532,7 +570,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				INFOPLIST_FILE = objc_iOS/Info.plist;
+				INFOPLIST_FILE = iOS/objc_iOS/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -595,7 +633,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				INFOPLIST_FILE = objc_iOS/Info.plist;
+				INFOPLIST_FILE = iOS/objc_iOS/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -804,7 +842,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				INFOPLIST_FILE = Core/Info.plist;
+				INFOPLIST_FILE = Frameworks/Core/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -876,7 +914,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				INFOPLIST_FILE = Core/Info.plist;
+				INFOPLIST_FILE = Frameworks/Core/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
 				LD_RUNPATH_SEARCH_PATHS = (
