@@ -1,17 +1,17 @@
 ---
-title: 30 天從 Swift 學會 Objective C
+title: 30 天從 Swift 學會 Objective-C
 tags: 鐵人賽, 2020
 ---
-# 30 天從 Swift 學會 Objective C
+# 30 天從 Swift 學會 Objective-C
 我的 itHelp 的草稿
 [tutorialspoint 資源](https://www.tutorialspoint.com/objective_c/index.htm)
 [apple doc](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/ProgrammingWithObjectiveC/Introduction/Introduction.html)
 [Objective-C to Swift conversion cheat sheet – Hacking with Swift](https://www.hackingwithswift.com/articles/114/objective-c-to-swift-conversion-cheat-sheet)
 
 [從0開始，一起學C語言吧!(Day1) - iT 邦幫忙__一起幫忙解決難題，拯救 IT 人的一天](https://ithelp.ithome.com.tw/articles/10213320)
-1. 介紹 Objective C
-    * 什麼是 Objective C
-    * 我學會了 Swift 為什麼要學 Objective C
+1. 介紹 Objective-C
+    * 什麼是 Objective-C
+    * 我學會了 Swift 為什麼要學 Objective-C
         * [Advancements in the Objective-C runtime - WWDC 2020](https://developer.apple.com/videos/play/wwdc2020/10163/)
     * 本系列文章出發點
     * 閱讀之前
@@ -24,11 +24,11 @@ https://www.tutorialspoint.com/objective_c/index.htm
     * Stand input, output, Error
         * https://stackoverflow.com/questions/9006801/difference-between-nslog-and-printf-statement-for-objectivec
         * https://stackoverflow.com/questions/24041554/how-can-i-output-to-stderr-with-swift
-3. Objective C 的 C 部分，跟 Swift 差不多
+3. Objective-C 的 C 部分，跟 Swift 差不多
     * 沒有物件導向的指令式編程
 
 
-5. Objective C 型別, operator, 註解
+5. Objective-C 型別, operator, 註解
     * Constants and Variables
     * Comments
     * Semicolons
@@ -44,9 +44,9 @@ https://www.tutorialspoint.com/objective_c/index.htm
     * Error Handling
     * Assertions and Preconditions 
     
-4. Swift 與 Objective C 相似的部分
+4. Swift 與 Objective-C 相似的部分
 Int
-5. Swift 與 Objective C 不同的部分
+5. Swift 與 Objective-C 不同的部分
     * Error handling 
     * String
     * interface\implement

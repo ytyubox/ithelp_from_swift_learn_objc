@@ -70,6 +70,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		9AA4C20524BB10E800A073F4 /* [01]關於這個系列與介紹.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "[01]關於這個系列與介紹.md"; sourceTree = "<group>"; };
 		9AA6743C24B9E9B400091283 /* FUNDING.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = FUNDING.yml; sourceTree = "<group>"; };
 		9AA6743E24B9E9B400091283 /* Article_change.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = Article_change.md; sourceTree = "<group>"; };
 		9AA675D324B9E9CA00091283 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
@@ -252,6 +253,7 @@
 			isa = PBXGroup;
 			children = (
 				9AFE9FA224B9C3090040EAF7 /* README.md */,
+				9AA4C20524BB10E800A073F4 /* [01]關於這個系列與介紹.md */,
 			);
 			path = Articles;
 			sourceTree = "<group>";
