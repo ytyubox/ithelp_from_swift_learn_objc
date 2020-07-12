@@ -1,4 +1,6 @@
 ---
+name: 文章更新	
+about: 作為更新文章的起點
 title: "[文章相關] "
 labels: documentation
 assignees: ytyubox
