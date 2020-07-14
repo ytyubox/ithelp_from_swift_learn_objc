@@ -23,7 +23,7 @@ jobs:
       uses: alex-page/github-project-automation-plus@v0.2.4
       with:
         # The GH_TOKEN secret can be passed in using 
-       repo-token: ${{ secrets.GITHUB_TOKEN }}
+       repo-token: ${{ secrets.GHTOKEN }}
         # The name of the GitHub Project
        project: "鐵人賽 30 天從 Swift 學會 Objective C"
       # The name of the column to move the issue or pull request to
