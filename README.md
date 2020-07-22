@@ -14,9 +14,10 @@
 
 ## // - TODO：目標主題清單
  
-- [ ] Compiler in terminal
-- [ ] Basic type
-- [ ] Type conversion, Optional chaining
+- [x] Compiler in terminal
+- [x] Basic type
+- [x] Type conversion
+- [ ] Optional chaining
 - [ ] Collection
 - [ ] Error handling
 - [ ] Value type: enum, structure 
