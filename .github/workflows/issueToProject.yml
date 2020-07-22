@@ -30,3 +30,10 @@ jobs:
        project: "鐵人賽 30 天從 Swift 學會 Objective C"
       # The name of the column to move the issue or pull request to
        column: "未完成"
+    - name: Create Issue Branch
+      uses: robvanderleek/create-issue-branch@v1.3
+      env:
+        GITHUB_TOKEN: ${{secrets.GHTOKEN}}
+        branch: '${issue.number}-${issue.title}'
+        slient: false
+        autoCloseIssue: true
