@@ -25,7 +25,7 @@ void chapter(const char* const title,
 
 int main(int argc,
          const char * _argv[argc - 1]) {
-    chapter("Welcome to Basic C Main", ^{
+    chapter("## 01 Welcome to Basic C Main", ^{
     });
     NSMutableArray<NSString*> *argv = [NSMutableArray array];
     for (int i = 0; i < argc; i++) {
@@ -35,7 +35,7 @@ int main(int argc,
         [argv addObject:str];
     }
     
-    chapter("## 01 Hello world\n", ^ {
+    chapter("## 02 Hello world\n", ^ {
         NSString* name = (argc > 1)
         ? argv[1]
         : @"world";
@@ -46,15 +46,34 @@ int main(int argc,
         NSLog(@"NSLog is in stderr");
     });
     
-    chapter("## 02 Header Usage\n", ^{
+
+    chapter("## 03 Basic types\n",^{
+        printf("sizeof bool is %lu\n",   sizeof(bool));         // 取得 bool 的使用二元組數量
+        printf("sizeof char is %lu\n",   sizeof(char));         // 取得 char 的使用二元組數量
+        printf("sizeof short is %lu\n",  sizeof(short));       // 取得 short 的使用二元組數量
+        printf("sizeof int is %lu\n",    sizeof(int));           // 取得 int 的使用二元組數量
+        printf("sizeof long is %lu\n",   sizeof(long int));     // 取得 long int 的使用二元組數量
+        printf("sizeof float is %lu\n",  sizeof(float));       // 取得 float 的使用二元組數量
+        printf("sizeof double is %lu\n", sizeof(double));     // 取得 double 的使用二元組數量
+        
+        printf("(float) 3 / (float) 2 = %f\n",(float) 3 / (float) 2);
+        
+        char     strSource[] = "1";
+        char*   strErrorIndicator = NULL;
+        int      inputBase = 10;
+        printf("strtol(\"1\", &PTR, 10) = %ld\n",
+               strtol(strSource, &strErrorIndicator, inputBase));
+        long l = 0x3f9d70a4;
+        printf("float value of 0x%lx is %f\n",
+               l,
+               *((float*)&l));
+    });
+    
+    chapter("## 03 Header Usage\n", ^{
         const int result = SOCAdd(1, 2);
         printf("`Add.h` method add(1, 2) -> %d\n",
               result);
     });
     
-    chapter("## 03 types and const\n",^{
-        const char* const s = "the constant";
-        printf("the const `s` will always be `%s`\n",s);
-    });
     return 0;
 }

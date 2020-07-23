@@ -23,6 +23,7 @@
 		9AFE9F9824B9B83D0040EAF7 /* MyMath.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AFE9F9624B9B83D0040EAF7 /* MyMath.m */; };
 		9AFE9F9924B9B83D0040EAF7 /* MyMath.h in Headers */ = {isa = PBXBuildFile; fileRef = 9AFE9F9724B9B83D0040EAF7 /* MyMath.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9AFE9F9F24B9B8D90040EAF7 /* CoreTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AFE9F9E24B9B8D90040EAF7 /* CoreTests.m */; };
+		A720CEBA24C7DC0D00A6617D /* [03] Objective-C 的基本 C 語言型別.md in Resources */ = {isa = PBXBuildFile; fileRef = A720CEB924C7DC0D00A6617D /* [03] Objective-C 的基本 C 語言型別.md */; };
 		A79D678724BECF8500E2903C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A79D678624BECF8500E2903C /* main.m */; };
 		A79D67C324BED28D00E2903C /* SOCsayHello.m in Sources */ = {isa = PBXBuildFile; fileRef = A79D67BD24BED25400E2903C /* SOCsayHello.m */; };
 		A79D67C424BED29F00E2903C /* SOCAdd.h in Sources */ = {isa = PBXBuildFile; fileRef = A79D67C124BED25C00E2903C /* SOCAdd.h */; };
@@ -113,6 +114,7 @@
 		9AFE9F9E24B9B8D90040EAF7 /* CoreTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreTests.m; sourceTree = "<group>"; };
 		9AFE9FA024B9BD800040EAF7 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		9AFE9FA224B9C3090040EAF7 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		A720CEB924C7DC0D00A6617D /* [03] Objective-C 的基本 C 語言型別.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = "[03] Objective-C 的基本 C 語言型別.md"; sourceTree = "<group>"; };
 		A79D678424BECF8500E2903C /* Basic C main */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Basic C main"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A79D678624BECF8500E2903C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A79D67BA24BED24800E2903C /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
@@ -285,6 +287,7 @@
 				9AFE9FA224B9C3090040EAF7 /* README.md */,
 				9AA4C20524BB10E800A073F4 /* [01]關於這個系列與介紹.md */,
 				A79D67C524BEFCDC00E2903C /* [02] Objective-C 的 C 語言部分.md */,
+				A720CEB924C7DC0D00A6617D /* [03] Objective-C 的基本 C 語言型別.md */,
 			);
 			path = Articles;
 			sourceTree = "<group>";
@@ -485,6 +488,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A720CEBA24C7DC0D00A6617D /* [03] Objective-C 的基本 C 語言型別.md in Resources */,
 				9AB8D6BA24B9B78A00515002 /* LaunchScreen.storyboard in Resources */,
 				9AB8D6B724B9B78A00515002 /* Assets.xcassets in Resources */,
 				9AB8D6B524B9B78300515002 /* Main.storyboard in Resources */,
