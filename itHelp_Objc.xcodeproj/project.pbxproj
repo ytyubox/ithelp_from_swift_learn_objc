@@ -28,6 +28,7 @@
 		A79D67C324BED28D00E2903C /* SOCsayHello.m in Sources */ = {isa = PBXBuildFile; fileRef = A79D67BD24BED25400E2903C /* SOCsayHello.m */; };
 		A79D67C424BED29F00E2903C /* SOCAdd.h in Sources */ = {isa = PBXBuildFile; fileRef = A79D67C124BED25C00E2903C /* SOCAdd.h */; };
 		A79D67C624BEFCDD00E2903C /* [02] Objective-C 的 C 語言部分.md in Resources */ = {isa = PBXBuildFile; fileRef = A79D67C524BEFCDC00E2903C /* [02] Objective-C 的 C 語言部分.md */; };
+		A7FAF60A24C9394400458A91 /* [04] Objective-C 的基本 C 語言聚合型別.md in Resources */ = {isa = PBXBuildFile; fileRef = A7FAF60924C9394400458A91 /* [04] Objective-C 的基本 C 語言聚合型別.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -122,6 +123,7 @@
 		A79D67C024BED25C00E2903C /* SOCAdd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SOCAdd.m; sourceTree = "<group>"; };
 		A79D67C124BED25C00E2903C /* SOCAdd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SOCAdd.h; sourceTree = "<group>"; };
 		A79D67C524BEFCDC00E2903C /* [02] Objective-C 的 C 語言部分.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = "[02] Objective-C 的 C 語言部分.md"; sourceTree = "<group>"; };
+		A7FAF60924C9394400458A91 /* [04] Objective-C 的基本 C 語言聚合型別.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = "[04] Objective-C 的基本 C 語言聚合型別.md"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -288,6 +290,7 @@
 				9AA4C20524BB10E800A073F4 /* [01]關於這個系列與介紹.md */,
 				A79D67C524BEFCDC00E2903C /* [02] Objective-C 的 C 語言部分.md */,
 				A720CEB924C7DC0D00A6617D /* [03] Objective-C 的基本 C 語言型別.md */,
+				A7FAF60924C9394400458A91 /* [04] Objective-C 的基本 C 語言聚合型別.md */,
 			);
 			path = Articles;
 			sourceTree = "<group>";
@@ -490,6 +493,7 @@
 			files = (
 				A720CEBA24C7DC0D00A6617D /* [03] Objective-C 的基本 C 語言型別.md in Resources */,
 				9AB8D6BA24B9B78A00515002 /* LaunchScreen.storyboard in Resources */,
+				A7FAF60A24C9394400458A91 /* [04] Objective-C 的基本 C 語言聚合型別.md in Resources */,
 				9AB8D6B724B9B78A00515002 /* Assets.xcassets in Resources */,
 				9AB8D6B524B9B78300515002 /* Main.storyboard in Resources */,
 				A79D67C624BEFCDD00E2903C /* [02] Objective-C 的 C 語言部分.md in Resources */,

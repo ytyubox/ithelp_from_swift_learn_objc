@@ -1,27 +1,37 @@
-//
-//  main.m
-//  Basic C main
-//  To Compile please go to SRCROOT/Basic C main and execute `make`
-//
-//  Created by 游宗諭 on 2020/7/15.
-//
+    //
+    //  main.m
+    //  Basic C main
+    //  To Compile please go to SRCROOT/Basic C main and execute `make`
+    //
+    //  Created by 游宗諭 on 2020/7/15.
+    //
 
 #import <Foundation/Foundation.h>
 
-/// 預宣告 function，這個 function 實際上是在 01/sayHello.m 定義的
-void sayHello(const char*);
-/// command line 編譯需要使用 `-I` 來指定 header search path
-/// Directory Options (Using the GNU Compiler Collection (GCC)) https://gcc.gnu.org/onlinedocs/gcc/Directory-Options.html
-/// 此外，該行等同 #include "Basic/02HeaderUsage/Add.h"，且不需要加 `-I`
+    /// 預宣告 function，這個 function 實際上是在 01/sayHello.m 定義的
+extern void sayHello(const char*);
+    /// command line 編譯需要使用 `-I` 來指定 header search path
+    /// Directory Options (Using the GNU Compiler Collection (GCC)) https://gcc.gnu.org/onlinedocs/gcc/Directory-Options.html
+    /// 此外，該行等同 #include "Basic/02HeaderUsage/Add.h"，且不需要加 `-I`
 #import "SOCAdd.h"
 
 void chapter(const char* const title,
-             void (^ todo) (void)
-             ) {
+             void (^ todo) (void)) {
     printf("\n▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼\n");
     printf("\n%s\n",title);
     todo();
 }
+
+void swap_double(double a[static 2]) {
+    double tmp = a[0];
+    a[0] = a[1];
+    a[1] = tmp;
+}
+
+typedef struct Person {
+    int age;
+    char gender;
+} Person;
 
 int main(int argc,
          const char * _argv[argc - 1]) {
@@ -46,7 +56,7 @@ int main(int argc,
         NSLog(@"NSLog is in stderr");
     });
     
-
+    
     chapter("## 03 Basic types\n",^{
         printf("sizeof bool is %lu\n",   sizeof(bool));         // 取得 bool 的使用二元組數量
         printf("sizeof char is %lu\n",   sizeof(char));         // 取得 char 的使用二元組數量
@@ -69,11 +79,73 @@ int main(int argc,
                *((float*)&l));
     });
     
-    chapter("## 03 Header Usage\n", ^{
-        const int result = SOCAdd(1, 2);
-        printf("`Add.h` method add(1, 2) -> %d\n",
-              result);
+    chapter("## 04 Aggregation types\n", ^{
+        int FLAs[3] = {
+            [0] = 1,
+            [2] = 2,
+        };
+        printf("FLA[0] = %d, FLA[1] = %d, FLA[2] = %d\n",
+               FLAs[0],
+               FLAs[1],
+               FLAs[2]);
+        printf("sizeof(FLAs) = %lu, sizeof(FLAs[0] = %lu, length of FLAs = %lu\n",
+               sizeof(FLAs),
+               sizeof(FLAs[0]),
+               sizeof(FLAs)/ sizeof(FLAs[0])
+               );
+        int VLAsLength = 3;
+        int VLAs[VLAsLength];
+        printf("VLAs length = %lu\n",sizeof(VLAs) / sizeof(VLAs[0]));
+        
+        double A[2] = { 1.0, 2.0, };
+        printf("A[0] = %f, A[1]%f\n",A[0], A[1]);
+        swap_double(A);
+        printf("`void swap_double(double a[static 2])`\n");
+        printf("A[0] = %f, A[1]%f\n",A[0], A[1]);
+        struct Person person = {
+            .age = 18,
+            .gender = 'm',
+        };
+        printf("Variable person is a `struct Person` type with age: %d, gender: %c\n",
+               person.age,
+               person.gender);
+        
+        struct Person* personAddress = &person;
+        printf("To get a `struct Person*` value can use:\n");
+        printf("\t\t: ( ptr)->age: %d, ptr->gender: %c\n",
+               personAddress->age,
+               personAddress->gender
+               );
+        printf("\t\t: (*ptr).age: %d, (*ptr).gender: %c\n",
+               (*personAddress).age,
+               (*personAddress).gender
+               );
+        
+        // Array
+        NSArray<NSNumber*>* array = @[@1, @2];
+        // String
+        NSLog(@"NSArray<NSNumber*>* array:\n%@",array);
+        NSString* string = @"this is a NSString";
+        // Hash Map
+        NSLog(@"NSString* string:\n%@",string);
+        NSDictionary<NSString*,NSNumber*>* dictionary = @{@"key": @1 };
+        // Set 沒有快速定義的方式
+        NSLog(@"NSDictionary<NSString*,NSNumber*>* dictionary:\n%@",dictionary);
+        NSSet<NSNumber*>* set = [[NSSet alloc]initWithArray:@[@1]];
+        NSLog(@"NSSet<NSNumber*>* set:\n%@",set);
+        
+        void * anyAddress;
+        char asciiA = 'A';
+        anyAddress = &asciiA;
+        *((int *) anyAddress) += 1;
+        printf("`*((int *) anyAddress) += 1` make asciiA to '%c'\n",asciiA); 
     });
     
-    return 0;
+    chapter("## 05 header usage\n", ^{
+        const int result = SOCAdd(1, 2);
+        printf("`Add.h` method add(1, 2) -> %d\n",
+               result);
+    });
+    
+    return EXIT_SUCCESS;
 }
