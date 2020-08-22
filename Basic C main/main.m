@@ -121,15 +121,15 @@ int main(int argc,
                (*personAddress).gender
                );
         
-        // Array
+            // Array
         NSArray<NSNumber*>* array = @[@1, @2];
-        // String
+            // String
         NSLog(@"NSArray<NSNumber*>* array:\n%@",array);
         NSString* string = @"this is a NSString";
-        // Hash Map
+            // Hash Map
         NSLog(@"NSString* string:\n%@",string);
         NSDictionary<NSString*,NSNumber*>* dictionary = @{@"key": @1 };
-        // Set 沒有快速定義的方式
+            // Set 沒有快速定義的方式
         NSLog(@"NSDictionary<NSString*,NSNumber*>* dictionary:\n%@",dictionary);
         NSSet<NSNumber*>* set = [[NSSet alloc]initWithArray:@[@1]];
         NSLog(@"NSSet<NSNumber*>* set:\n%@",set);
@@ -138,14 +138,43 @@ int main(int argc,
         char asciiA = 'A';
         anyAddress = &asciiA;
         *((int *) anyAddress) += 1;
-        printf("`*((int *) anyAddress) += 1` make asciiA to '%c'\n",asciiA); 
+        printf("`*((int *) anyAddress) += 1` make asciiA to '%c'\n",asciiA);
     });
     
-    chapter("## 05 header usage\n", ^{
+    chapter("## 05 functions and Storage\n", ^{
+        printf("size of a pointer is %lu\n",sizeof(&main));
+        printf("size of main is %lu\n",sizeof(main));
+        printf("size of a function is %lu\n", sizeof(chapter));
+        int (*mainCopy)(int, const char **) = main;
+        printf("main: %d is copied by main Copy: %d\n",(int)main, (int)mainCopy);
+        printf("mainCopy declared by `int (*mainCopy)(int, const char **)`");
+        int (^mainBlock)(int, const char **);
+        printf("Block type is `int (^__strong)(int, const char **)` not the same for C function\n");
+        mainBlock = ^(int argg, const char ** argv) {
+            return main(argc, argv);
+        };
+        printf("mainBlock = ^(int argg, const char ** argv) is the way to copy main to block\n");
+        
+        
+        printf("Objective-C can not have nested function\n");
+        
+        printf("exit(EXIT_SUCCESS) will teminate the main function\n");
+        
+        printf("using `assert(bool)` to assert condition\n");
+        printf("if assert get false, the main will abort with message indicate file and line where assertion failure.");
+        
+            /// #if __DARWIN_UNIX03
+            /// #define    assert(e) \
+            ///    (__builtin_expect(!(e), 0) ? __assert_rtn(__func__, __FILE__, __LINE__, #e) : (void)0)
+            /// #endif /* __DARWIN_UNIX03 */
+            ///
+        
+    });
+    
+    chapter("## 06 header usage\n", ^{
         const int result = SOCAdd(1, 2);
         printf("`Add.h` method add(1, 2) -> %d\n",
                result);
     });
-    
     return EXIT_SUCCESS;
 }
