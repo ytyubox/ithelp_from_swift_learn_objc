@@ -125,6 +125,7 @@
 		A79D67C024BED25C00E2903C /* SOCAdd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SOCAdd.m; sourceTree = "<group>"; };
 		A79D67C124BED25C00E2903C /* SOCAdd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SOCAdd.h; sourceTree = "<group>"; };
 		A79D67C524BEFCDC00E2903C /* [02] Objective-C 的 C 語言部分.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = "[02] Objective-C 的 C 語言部分.md"; sourceTree = "<group>"; };
+		A7BA6EAE24F2485E0024205A /* [06] Objective-C 的基本 C 語言 control flow.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "[06] Objective-C 的基本 C 語言 control flow.md"; sourceTree = "<group>"; };
 		A7FAF60924C9394400458A91 /* [04] Objective-C 的基本 C 語言聚合型別.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = "[04] Objective-C 的基本 C 語言聚合型別.md"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -294,7 +295,7 @@
 				A720CEB924C7DC0D00A6617D /* [03] Objective-C 的基本 C 語言型別.md */,
 				A7FAF60924C9394400458A91 /* [04] Objective-C 的基本 C 語言聚合型別.md */,
 				A787CCB024D174720030B1A8 /* [05] 05 Objective-C 的基本 C 語言 Function.md */,
-				A7BA6EAD24F118CF0024205A /* New Group */,
+				A7BA6EAE24F2485E0024205A /* [06] Objective-C 的基本 C 語言 control flow.md */,
 			);
 			path = Articles;
 			sourceTree = "<group>";
@@ -333,13 +334,6 @@
 				A79D67C024BED25C00E2903C /* SOCAdd.m */,
 			);
 			path = 02HeaderUsage;
-			sourceTree = "<group>";
-		};
-		A7BA6EAD24F118CF0024205A /* New Group */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "New Group";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

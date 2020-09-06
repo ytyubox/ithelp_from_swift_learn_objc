@@ -161,7 +161,7 @@ int main(int argc,
         printf("exit(EXIT_SUCCESS) will teminate the main function\n");
         
         printf("using `assert(bool)` to assert condition\n");
-        printf("if assert get false, the main will abort with message indicate file and line where assertion failure.");
+        printf("if assert get false, the main will abort with message indicate file and line where assertion failure.\n");
         
             /// #if __DARWIN_UNIX03
             /// #define    assert(e) \
@@ -171,10 +171,26 @@ int main(int argc,
         
     });
     
-    chapter("## 06 header usage\n", ^{
+    chapter("## 06 control flow", ^{
+        printf("C language have for loop, while loop, and do while loop\n");
+        printf("Fast Enumeration is the Objective-C only loop rather than C\n");
+        printf("However,Fast Enumeration only avaliable on Object that conform to NSFastEnumeration protocol\n");
+        NSArray* arr = @[@1, @2, @3];
+        for (NSNumber* number in arr)
+            printf("%d",[number intValue]); // number 可以直接使用
+
+        NSDictionary<NSString*,NSNumber*>* dic = @{@"x": @4, @"2": @5, @"3": @6};
+        for (NSURL* number in dic)
+            NSLog(@"%@\n",number);
+        
+        
+    });
+    
+    chapter("## 10 header usage\n", ^{
         const int result = SOCAdd(1, 2);
         printf("`Add.h` method add(1, 2) -> %d\n",
                result);
     });
     return EXIT_SUCCESS;
 }
+
