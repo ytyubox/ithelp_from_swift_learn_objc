@@ -114,6 +114,7 @@
 		9AD4FB212504CAFE00DB1F00 /* [07] Objective-C 的基本 C 語言 library 使用.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "[07] Objective-C 的基本 C 語言 library 使用.md"; sourceTree = "<group>"; };
 		9AD4FB242504FA4C00DB1F00 /* [08] Objective-C 的基本困難 C 語言 malloc、free .md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "[08] Objective-C 的基本困難 C 語言 malloc、free .md"; sourceTree = "<group>"; };
 		9AD4FB252504FB9C00DB1F00 /* [09]  Objective-C 的基本困難 C 語言 Preprocessor.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "[09]  Objective-C 的基本困難 C 語言 Preprocessor.md"; sourceTree = "<group>"; };
+		9AD4FB262504FBE800DB1F00 /* [10] Objective-C 的基本困難 C 語言 自定義 Header.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "[10] Objective-C 的基本困難 C 語言 自定義 Header.md"; sourceTree = "<group>"; };
 		9AFE9F9624B9B83D0040EAF7 /* MyMath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyMath.m; sourceTree = "<group>"; };
 		9AFE9F9724B9B83D0040EAF7 /* MyMath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyMath.h; sourceTree = "<group>"; };
 		9AFE9F9E24B9B8D90040EAF7 /* CoreTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreTests.m; sourceTree = "<group>"; };
@@ -302,6 +303,7 @@
 				9AD4FB212504CAFE00DB1F00 /* [07] Objective-C 的基本 C 語言 library 使用.md */,
 				9AD4FB242504FA4C00DB1F00 /* [08] Objective-C 的基本困難 C 語言 malloc、free .md */,
 				9AD4FB252504FB9C00DB1F00 /* [09]  Objective-C 的基本困難 C 語言 Preprocessor.md */,
+				9AD4FB262504FBE800DB1F00 /* [10] Objective-C 的基本困難 C 語言 自定義 Header.md */,
 			);
 			path = Articles;
 			sourceTree = "<group>";
