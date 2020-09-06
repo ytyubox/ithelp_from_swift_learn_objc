@@ -111,6 +111,7 @@
 		9AB8D6D724B9B7E900515002 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9AB8D6DC24B9B7E900515002 /* CoreTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoreTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9AB8D6E524B9B7EA00515002 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9AD4FB212504CAFE00DB1F00 /* [07] Objective-C 的基本 C 語言 library 使用.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "[07] Objective-C 的基本 C 語言 library 使用.md"; sourceTree = "<group>"; };
 		9AFE9F9624B9B83D0040EAF7 /* MyMath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyMath.m; sourceTree = "<group>"; };
 		9AFE9F9724B9B83D0040EAF7 /* MyMath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyMath.h; sourceTree = "<group>"; };
 		9AFE9F9E24B9B8D90040EAF7 /* CoreTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreTests.m; sourceTree = "<group>"; };
@@ -296,6 +297,7 @@
 				A7FAF60924C9394400458A91 /* [04] Objective-C 的基本 C 語言聚合型別.md */,
 				A787CCB024D174720030B1A8 /* [05] 05 Objective-C 的基本 C 語言 Function.md */,
 				A7BA6EAE24F2485E0024205A /* [06] Objective-C 的基本 C 語言 control flow.md */,
+				9AD4FB212504CAFE00DB1F00 /* [07] Objective-C 的基本 C 語言 library 使用.md */,
 			);
 			path = Articles;
 			sourceTree = "<group>";
