@@ -1,4 +1,4 @@
-#  [10]  Objective-C 的基本困難 C 語言 Preprocessor
+#  [10] 30 天從 Swift 學會 Objective-C：Objective-C 的基本困難 C 語言 Preprocessor
 
 程式設計有時候可以利用自動化大大節省事情的處理時間，但有時候如果對於語言的不熟悉，可能會造成程式碼不如預期，而這件事常常出現在 C 語言的預處理部分！
 

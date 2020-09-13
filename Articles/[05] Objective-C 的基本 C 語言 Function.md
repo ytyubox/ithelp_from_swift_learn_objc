@@ -1,4 +1,4 @@
-# [05] 30 天從 Swift 學會 Objective-C: Objective-C 的基本 C 語言 Function
+# [05] 30 天從 Swift 學會 Objective-C：Objective-C 的基本 C 語言 Function
 
 程式語言中，我們時常使用的 Function，其實是 Subroutine，又稱子程式，根據 [Subroutine - wiki](https://en.wikipedia.org/wiki/Subroutine) 中所定義的，子程式是一個大型程式中的某部份程式碼，由一個或多個語句塊組成。它負責完成某項特定工作，而且相較於其他程式碼，具備相對的獨立性。因此，Function 在 object-oriented programming 中，是屬於全域範疇的。
 
@@ -29,7 +29,7 @@ class Object {
 熟悉 Swift 的朋友可是嘗試理解以下的程式碼：
 ```swift
 // Swift
-let object:Object = ...
+let object: Object = ...
 let aFunctionResult = Object.aFunction(object)()
 ```
 

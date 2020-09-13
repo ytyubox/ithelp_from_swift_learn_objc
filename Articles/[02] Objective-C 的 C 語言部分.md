@@ -1,4 +1,4 @@
-# [02] 30 天從 Swift 學會 Objective-C： Objective-C 的 C 語言部分
+# [02] 30 天從 Swift 學會 Objective-C：Objective-C 的 C 語言部分
 
 Swift 有獨立使用的編譯器，透過 `swiftc main.swift` 可以很直接的編譯 Swift 程式碼，更可以使用 Swift Package 來作為 executable 的專案管理，但是 Objective-C 的編譯方法卻與 Swift 大不一樣，在開始學習 Objective-C 語法之前，我們先拿好釣竿，練習如何自己編譯並執行 Objective–C 程式碼！
 
