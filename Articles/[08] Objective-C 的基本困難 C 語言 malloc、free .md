@@ -1,4 +1,4 @@
-#  [08] Objective-C 的基本困難 C 語言 malloc、free
+#  [08] 30 天從 Swift 學會 Objective-C：Objective-C 的基本困難 C 語言 malloc、free
 
 在程式語言中，記憶體就相當與一張白紙，這張白紙是一個有限的空間，而這些空間會用來記憶資料，就像是大腦一樣。
 

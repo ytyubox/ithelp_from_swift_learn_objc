@@ -1,4 +1,4 @@
-# [04] 30 天從 Swift 學會 Objective-C: Objective-C 的基本 C 語言聚合型別
+# [04] 30 天從 Swift 學會 Objective-C：Objective-C 的基本 C 語言聚合型別
 
 在生活中，我們將一系列的資料聚集在一起，如果這些資料需要有先後順序（如日記），我們可以用有序的方式紀錄；如果這些資料沒有順序（如個人資料），我們可以用聚合的方式紀錄。在 Swift 中我們可以使用`Array`、`Tuple`、`struct` 等方式來將基本型別同捆 (Bundle) 起來，Objective-C 也有同樣的行為。
 

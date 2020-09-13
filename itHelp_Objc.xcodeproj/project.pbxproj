@@ -24,7 +24,7 @@
 		9AFE9F9924B9B83D0040EAF7 /* MyMath.h in Headers */ = {isa = PBXBuildFile; fileRef = 9AFE9F9724B9B83D0040EAF7 /* MyMath.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9AFE9F9F24B9B8D90040EAF7 /* CoreTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AFE9F9E24B9B8D90040EAF7 /* CoreTests.m */; };
 		A720CEBA24C7DC0D00A6617D /* [03] Objective-C 的基本 C 語言型別.md in Resources */ = {isa = PBXBuildFile; fileRef = A720CEB924C7DC0D00A6617D /* [03] Objective-C 的基本 C 語言型別.md */; };
-		A787CCB124D174720030B1A8 /* [05] 05 Objective-C 的基本 C 語言 Function.md in Resources */ = {isa = PBXBuildFile; fileRef = A787CCB024D174720030B1A8 /* [05] 05 Objective-C 的基本 C 語言 Function.md */; };
+		A787CCB124D174720030B1A8 /* [05] Objective-C 的基本 C 語言 Function.md in Resources */ = {isa = PBXBuildFile; fileRef = A787CCB024D174720030B1A8 /* [05] Objective-C 的基本 C 語言 Function.md */; };
 		A79D678724BECF8500E2903C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A79D678624BECF8500E2903C /* main.m */; };
 		A79D67C324BED28D00E2903C /* SOCsayHello.m in Sources */ = {isa = PBXBuildFile; fileRef = A79D67BD24BED25400E2903C /* SOCsayHello.m */; };
 		A79D67C424BED29F00E2903C /* SOCAdd.h in Sources */ = {isa = PBXBuildFile; fileRef = A79D67C124BED25C00E2903C /* SOCAdd.h */; };
@@ -115,13 +115,23 @@
 		9AD4FB242504FA4C00DB1F00 /* [08] Objective-C 的基本困難 C 語言 malloc、free .md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "[08] Objective-C 的基本困難 C 語言 malloc、free .md"; sourceTree = "<group>"; };
 		9AD4FB252504FB9C00DB1F00 /* [10]  Objective-C 的基本困難 C 語言 Preprocessor.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "[10]  Objective-C 的基本困難 C 語言 Preprocessor.md"; sourceTree = "<group>"; };
 		9AD4FB262504FBE800DB1F00 /* [09] Objective-C 的基本困難 C 語言 自定義 Header.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "[09] Objective-C 的基本困難 C 語言 自定義 Header.md"; sourceTree = "<group>"; };
+		9AECB796250E623B00125025 /* [17] Objective-C 物件的Protocol 與 type casting.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "[17] Objective-C 物件的Protocol 與 type casting.md"; sourceTree = "<group>"; };
+		9AECB797250E623B00125025 /* [20] Objective-C 物件的特殊 Selector.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "[20] Objective-C 物件的特殊 Selector.md"; sourceTree = "<group>"; };
+		9AECB798250E623B00125025 /* [19] Objective-C 物件的特殊 Block.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "[19] Objective-C 物件的特殊 Block.md"; sourceTree = "<group>"; };
+		9AECB799250E623B00125025 /* [18] Objective-C 物件的extension 與 Categories.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "[18] Objective-C 物件的extension 與 Categories.md"; sourceTree = "<group>"; };
+		9AECB79A250E623B00125025 /* [11] Objective-C 物件的的編寫.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "[11] Objective-C 物件的的編寫.md"; sourceTree = "<group>"; };
+		9AECB79B250E623B00125025 /* [15] Objective-C 物件的泛型.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "[15] Objective-C 物件的泛型.md"; sourceTree = "<group>"; };
+		9AECB79C250E623B00125025 /* [12] Objective-C 物件的封裝.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "[12] Objective-C 物件的封裝.md"; sourceTree = "<group>"; };
+		9AECB79D250E623B00125025 /* [16] Objective-C 物件的Optional chaining.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "[16] Objective-C 物件的Optional chaining.md"; sourceTree = "<group>"; };
+		9AECB79E250E623C00125025 /* [14] Objective-C 物件的多型.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "[14] Objective-C 物件的多型.md"; sourceTree = "<group>"; };
+		9AECB79F250E623C00125025 /* [13] Objective-C 物件的繼承.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "[13] Objective-C 物件的繼承.md"; sourceTree = "<group>"; };
 		9AFE9F9624B9B83D0040EAF7 /* MyMath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyMath.m; sourceTree = "<group>"; };
 		9AFE9F9724B9B83D0040EAF7 /* MyMath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyMath.h; sourceTree = "<group>"; };
 		9AFE9F9E24B9B8D90040EAF7 /* CoreTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreTests.m; sourceTree = "<group>"; };
 		9AFE9FA024B9BD800040EAF7 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		9AFE9FA224B9C3090040EAF7 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		A720CEB924C7DC0D00A6617D /* [03] Objective-C 的基本 C 語言型別.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = "[03] Objective-C 的基本 C 語言型別.md"; sourceTree = "<group>"; };
-		A787CCB024D174720030B1A8 /* [05] 05 Objective-C 的基本 C 語言 Function.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = "[05] 05 Objective-C 的基本 C 語言 Function.md"; sourceTree = "<group>"; };
+		A787CCB024D174720030B1A8 /* [05] Objective-C 的基本 C 語言 Function.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = "[05] Objective-C 的基本 C 語言 Function.md"; sourceTree = "<group>"; };
 		A79D678424BECF8500E2903C /* Basic C main */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Basic C main"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A79D678624BECF8500E2903C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A79D67BA24BED24800E2903C /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
@@ -298,12 +308,22 @@
 				A79D67C524BEFCDC00E2903C /* [02] Objective-C 的 C 語言部分.md */,
 				A720CEB924C7DC0D00A6617D /* [03] Objective-C 的基本 C 語言型別.md */,
 				A7FAF60924C9394400458A91 /* [04] Objective-C 的基本 C 語言聚合型別.md */,
-				A787CCB024D174720030B1A8 /* [05] 05 Objective-C 的基本 C 語言 Function.md */,
+				A787CCB024D174720030B1A8 /* [05] Objective-C 的基本 C 語言 Function.md */,
 				A7BA6EAE24F2485E0024205A /* [06] Objective-C 的基本 C 語言 control flow.md */,
 				9AD4FB212504CAFE00DB1F00 /* [07] Objective-C 的基本 C 語言 library 使用.md */,
 				9AD4FB242504FA4C00DB1F00 /* [08] Objective-C 的基本困難 C 語言 malloc、free .md */,
 				9AD4FB262504FBE800DB1F00 /* [09] Objective-C 的基本困難 C 語言 自定義 Header.md */,
 				9AD4FB252504FB9C00DB1F00 /* [10]  Objective-C 的基本困難 C 語言 Preprocessor.md */,
+				9AECB79A250E623B00125025 /* [11] Objective-C 物件的的編寫.md */,
+				9AECB79C250E623B00125025 /* [12] Objective-C 物件的封裝.md */,
+				9AECB79F250E623C00125025 /* [13] Objective-C 物件的繼承.md */,
+				9AECB79E250E623C00125025 /* [14] Objective-C 物件的多型.md */,
+				9AECB79B250E623B00125025 /* [15] Objective-C 物件的泛型.md */,
+				9AECB79D250E623B00125025 /* [16] Objective-C 物件的Optional chaining.md */,
+				9AECB796250E623B00125025 /* [17] Objective-C 物件的Protocol 與 type casting.md */,
+				9AECB799250E623B00125025 /* [18] Objective-C 物件的extension 與 Categories.md */,
+				9AECB798250E623B00125025 /* [19] Objective-C 物件的特殊 Block.md */,
+				9AECB797250E623B00125025 /* [20] Objective-C 物件的特殊 Selector.md */,
 			);
 			path = Articles;
 			sourceTree = "<group>";
@@ -509,7 +529,7 @@
 				A7FAF60A24C9394400458A91 /* [04] Objective-C 的基本 C 語言聚合型別.md in Resources */,
 				9AB8D6B724B9B78A00515002 /* Assets.xcassets in Resources */,
 				9AB8D6B524B9B78300515002 /* Main.storyboard in Resources */,
-				A787CCB124D174720030B1A8 /* [05] 05 Objective-C 的基本 C 語言 Function.md in Resources */,
+				A787CCB124D174720030B1A8 /* [05] Objective-C 的基本 C 語言 Function.md in Resources */,
 				A79D67C624BEFCDD00E2903C /* [02] Objective-C 的 C 語言部分.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
