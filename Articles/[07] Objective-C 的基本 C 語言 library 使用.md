@@ -124,4 +124,4 @@ int main () {
 1. [進階] 說明 static、shared與dynamically loaded 這些 Library 有什麼區別
 
 ## 註記
-1.  Umbrella header： C  語言沒有特別有 Umbrella header 的稱呼，是 Apple 對於其有定義，意指： 一個 Framework 的集中引用檔案，詳閱 [Apple Archive Document: Framework Programming Guide - Including Frameworks](https://developer.apple.com/library/archive/documentation/MacOSX/Conceptual/BPFrameworks/Tasks/IncludingFrameworks.html)
+1.  Umbrella header： C  語言沒有特別有 Umbrella header 的稱呼，是 Apple 對於其有定義，意指： 一個 Framework 的集中引用檔案，詳閱 [Apple Archive Document: Framework Programming Guide - Including sFrameworks](https://developer.apple.com/library/archive/documentation/MacOSX/Conceptual/BPFrameworks/Tasks/IncludingFrameworks.html)
