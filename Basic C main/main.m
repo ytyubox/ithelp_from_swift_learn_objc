@@ -32,7 +32,13 @@ typedef struct Person {
     int age;
     char gender;
 } Person;
-
+Person* PersonMake(int age, char gender) {
+    Person* person = malloc(sizeof(Person));
+    if (!person) return NULL;
+    person->age = age;
+    person->gender = gender;
+    return person;
+}
 int main(int argc,
          const char * _argv[argc - 1]) {
     chapter("## 01 Welcome to Basic C Main", ^{
