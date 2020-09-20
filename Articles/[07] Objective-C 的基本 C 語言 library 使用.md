@@ -99,6 +99,13 @@ int main () {
 
 這兩種方式在 StackOverflow 已經有完成的討論，詳閱 [What is the difference between #include <filename> and #include “filename”?](https://stackoverflow.com/questions/21593/what-is-the-difference-between-include-filename-and-include-filename)
 
+在 C 語言中有許多 system library，如 `stdlib.h`、`stdio.h`、`string.h`，因為實在太多了，可以參考 [Function Index (The GNU C Library)](https://www.gnu.org/software/libc/manual/html_node/Function-Index.html)，或是使用 Bash 指令查找： 
+```Bash
+// Bash
+man -k FUNCTION
+```
+
+而 第三方套件，由於我在編寫 C 專案的部分目前還是以 Git 的 Submodule 使用，在透過 `Makefile` 使用，其他方式沒有相關的經驗，建議有興趣的讀者可以 Google 看看 `C package Management`，看看有沒有適合的工具。 
 
 ## Objective-C 的 `import <FRAMEWORK/FRAMEWORK.h>` 
 
@@ -110,6 +117,8 @@ int main () {
 #include <Foundation/Foundation.h>  // include everything under Foundation
 #include <Foundation/NSObject.h>    // include only NSObject in Foundation
 ```
+
+而 Objective-C 的套件管理，目前仍然推薦使用 `CocoaPods` 這個開源專案，這是 iOS 開發者行之有年的套件管理，該套件可以在 macOS 與 Windows 上使用。
 
 ### [進階] 關於 `#include` 與 `#import`
 而如果讀者有使用 Xcode 的 Cocoa class file template 的話，會看到 `#import 與 @import`，說明如下：
