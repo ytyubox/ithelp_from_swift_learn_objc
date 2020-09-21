@@ -8,8 +8,26 @@ Photo by [@nathangbingle](https://unsplash.com/@nathangbingle) on  [Unsplash](ht
 
 ## 【重要擋修】什麼是預處理部分？
 
+在 C 語言中有所謂的前 4 步驟，詳閱 [C preprocessor: Phases - wiki](https://en.wikipedia.org/wiki/C_preprocessor#Phases)
 
+我們將從 3 個方面切入：
+1. 引用檔案 include file
+2. 條件編譯 Conditional compilation
+3. 巨集定義與擴展 Macro definition and expansion
 
+## Swift 的預處理
+```swift
+#if DEBUG
+#endif
+```
+```swift
+if @avaliable() {
+
+}
+@avaliable(...)
+func
+#file, #line, #function
+```
 > Swift 在預處理的部分只有實現執行環境。
 
 ## C 語言的預處理
