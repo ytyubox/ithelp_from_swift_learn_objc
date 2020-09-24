@@ -26,9 +26,11 @@ if @avaliable() {
 }
 @avaliable(...)
 func
-#file, #line, #function
+#filepath, #line, #function
+typealias
+// comment
+/* comment */
 ```
-> Swift 在預處理的部分只有實現執行環境。
 
 ## C 語言的預處理
 
