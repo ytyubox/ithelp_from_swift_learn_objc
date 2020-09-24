@@ -197,6 +197,12 @@ int main(int argc,
         printf("`Add.h` method add(1, 2) -> %d\n",
                result);
     });
+    if (@available(macOS 20, *)) {
+        printf("macOS above 20\n");
+    }
+    NSLog(@"Null %@\n",[NSNull null]);
+    NSLog(@"nil %@\n", nil);
+    NSLog(@"Nil %@\n", Nil);
     return EXIT_SUCCESS;
 }
 
