@@ -10,35 +10,109 @@ Photo by [@oteb](https://unsplash.com/@oteb) on [Unsplash](https://unsplash.com/
 
 在物件導向中，簡單的情境可以透過很直覺的手法化成資料結構，然而隨著時間演進情境越來越複雜，資料結構往往會開始跟著特例而越來越複雜。我們現在要處理集合論的抽象編寫[註 1]。
 
+為了方便閱讀，我們使用 [各式各樣的數 - wiki](https://zh.wikipedia.org/wiki/%E6%95%B0)中的實數集合，並將所有的數字視為獨立的 Object。我們可以知道以下觀念：
+> ![](https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Number-systems.svg/440px-Number-systems.svg.png)
+> 實數（ℝ）包括有理數（ℚ），其中包括整數（ℤ），其中包括自然數（ℕ）
+1. 實數（ℝ）有子集合：有理數（ℚ）
+2. 有理數（ℚ）有子集合：整數（ℤ）
+3. 整數（ℤ）有子集合：自然數（ℕ）
+
+套用 Swift 的物件編寫方式，我們可以得到下面的程式碼：
+```swift
+// Swift
+class ℝ {}
+class ℚ: ℝ {}
+class ℤ: ℚ {}
+class ℕ: ℤ {}
+```
+
+基於這樣的故事，我們繼續來看看。
 
 ## C 語言也有繼承，是真的
 
-https://stackoverflow.com/a/415536/10172299
+在 [Object-Oriented Programming With ANSI-C](https://www.cs.rit.edu/~ats/books/ooc.pdf) 一書中，第 4 章節有提到，強烈建議讀者對[這個 StackoverFlow 問題](https://stackoverflow.com/a/415536/10172299) 有興趣可以看看。
+
+
+
 
 ## Objective-C 繼承
 
 ```objectivec
 // Objectiv-C
 
+@interface R : NSObject
+- (int) decimal;
+@end
+
+@interface Q : R
+@end
+
+@interface Z : Q
+@end
+
+@interface N : Z
+@end
 ```
 
+而在 Objective-C 的因為是屬於響應與否的程式設計，不像 Swift 必須要型別確定才可以順利執行。也由於這個關係，Objective-C 認為對 Object 呼叫不可響應的指令，是屬於 Design fault(程式設計錯誤)，是需要我們自己調適的。
+
+```objectivec
+// Objective-C
+
+R* r = [R alloc];
+Q* q = [Q alloc];
+Z* z = [Z alloc];
+N* n = [N alloc];
+[n isKindOfClass:   [R class]];             // YES
+[n isMemberOfClass: [R class]];             // NO
+[n respondsToSelector: @selector(decimal)]; // YES
+```
 ## Swift 的 Protocol Oriented Programming (POP)
+在 Swift 中，Protocol 可以是完全沒有內容的，我們可以將其想像為標籤，不改變物件的內容與實作，單純給予型別。
 
-## Objective-C 
+```swift
+// Swift
+protocol VIP {}
+extension ℕ: VIP {}
 
-`[MyClass conformsToProtocol:@protocol(MyProtocol)];`
-`[someClassPointer.class conformsToProtocol:@protocol(MyProtocol)];`
+let r: ℝ = ℕ()
+r is VIP             // true
+```
+
+## Objective-C Protocol 必須要改寫 Header 檔
 
 
+為了實現 Swift 的 `class ℕ: VIP` 我們必須要改寫 `@interface N`
+
+```diff
+// Objective-C
+/* N.h */ 
+- @interface N : Z
++ @interface N : Z <VIP>
+@end
+```
+
+而可以使用 `conformsToProtocol` 實現 `is`
+```Objectivec
+
+// Objective-C
+N* n = [N alloc];
+
+[n conformsToProtocol: @protocol(VIP)]; // true
+```
+
+或是，你可以使用 override 的方式，不過我不喜歡這個方式
+```objectivec
+// Objective-C
+/* N.m */
+
+@implementation N
+- (BOOL)conformsToProtocol:(Protocol *)aProtocol {
+    return aProtocol == @protocol(VIP);
+}
+@end
+```
 
 
-
-
-`id <Drawable> some_object;`
-
-informal protocol ： https://github.com/ytyubox/ithelp_from_swift_learn_objc/edit/master/Articles/%5B13%5D%20Objective-C%20%E7%89%A9%E4%BB%B6%E7%9A%84%E7%B9%BC%E6%89%BF.md
-category
-
-## 註解
-1. https://www.tau.ac.il/~tsirel/dump/Static/knowino.org/wiki/Symbolic_Logic_Programming_Object_Oriented_Logic_Programming.html
-https://core.ac.uk/download/pdf/10180049.pdf
+## 簡單測驗
+1. 如果你要向程式新手解釋繼承，你會怎麼解釋？
