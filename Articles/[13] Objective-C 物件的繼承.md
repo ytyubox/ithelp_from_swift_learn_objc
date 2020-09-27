@@ -106,9 +106,10 @@ N* n = [N alloc];
 // Objective-C
 /* N.m */
 
-@implementation N
+@implementation N (vip)
 - (BOOL)conformsToProtocol:(Protocol *)aProtocol {
-    return aProtocol == @protocol(VIP);
+    return [super conformsToProtocol:aProtocol] ||
+     aProtocol == @protocol(VIP);
 }
 @end
 ```
