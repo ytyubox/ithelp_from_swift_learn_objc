@@ -1,7 +1,14 @@
 # [15] 30 天從 Swift 學會 Objective-C：Objective-C 物件的泛型
 
+在現實生活中有集合的概念，我們的思考習慣會將一系列一模一樣的事情放在集合裡面，例如同學們。在程式語言是一樣的道理，我們也偏好。
 
-與泛型的處理
+![](https://images.unsplash.com/photo-1581068466660-e6585b8afa97?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80)
+
+Photo by [@melodi2](https://unsplash.com/@melodi2) on [Unsplash](https://unsplash.com/photos/gWvdUpNQr6g)
+
+## Swift 的泛型處理
+在 Swift 我們可以使用 `<...>` 定義泛型
+
 ```swift 
 // Swift
 class Stack<T:Equatable> {
