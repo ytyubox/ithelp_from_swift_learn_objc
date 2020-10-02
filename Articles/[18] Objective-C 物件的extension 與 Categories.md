@@ -32,17 +32,48 @@ https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/Progr
 - (int) absIntValue;
 ```
 
-然而這
-Categories Add Methods to Existing Classes
+在 interface 後面我們為這個 category 定義一點標籤 `abs`，這個標籤在使用上幾乎是沒有作用的，詳細可以參考 [Do Objective-C Category names do anything? - StackOverflow](https://stackoverflow.com/a/5689130/10172299)。
+然而在 Objective-C 有所謂的 extension, 這部分我們在 day 12 的時候其實在 `/* ITPoint+internal.h */` 有用到。值得注意的是，根據 [Apple 官方文件 Customizing Existing Classes](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/ProgrammingWithObjectiveC/CustomizingExistingClasses/CustomizingExistingClasses.html)，我們可以知道 category 與 extension 的使用目的：
+1. Category 為現存的類別增加 Method
+2. Category 的同名函式會導致不可預期的行為，但是不會有執行錯誤
+3. Extension 可以作為 internal 的擴展定義
+4. Extension 可以實現 Private 實作。
 
-Class Extensions Extend the Internal Implementation
 
-Consider Other Alternatives for Class Customization
-Categories and class extensions make it easy to add behavior directly to an existing class, but sometimes this isn’t the best option.
+## [進階] 為類別增加額外的 property
+我們知道在 Swift 與 Objective-C 都不能直接在 Extension/Category 增加額外的 property，但是在 Objective-C 有所謂的 `objc_setAssociatedObject` 與 `getAssociatedObject` 可以得到。相關說明可以在 [Category 是否可以增加新的成員變數或屬性？ · KKBOX iOS_Mac OS X 基礎開發教材](https://kkbox.github.io/kkbox-ios-dev/category/member_variables_and_categories.html) 理解。
 
-One of the primary goals of object-oriented programming is to write reusable code, which means that classes should be reusable in a variety of situations, wherever possible. If you’re creating a view class to describe an object that displays information on screen, for example, it’s a good idea to think whether the class could be usable in multiple situations.
+在 Swift 我們可以這麼處理：
 
-Rather than hard-coding decisions about layout or content, one alternative is to leverage inheritance and leave those decisions in methods specifically designed to be overridden by subclasses. Although this does make it relatively easy to reuse the class, you still need to create a new subclass every time you want to make use of that original class.
+```swift
+// Swift
+import class Foundation.NSCache
 
-Another alternative is for a class to use a delegate object. Any decisions that might limit reusability can be delegated to another object, which is left to make those decisions at runtime. One common example is a standard table view class (NSTableView for OS X and UITableView for iOS). In order for a generic table view (an object that displays information using one or more columns and rows) to be useful, it leaves decisions about its content to be decided by another object at runtime. Delegation is covered in detail in the next chapter, Working with Protocols.
+class AssociateObject {
+    static let shared: AssociateObject = AssociateObject()
+    
+    static func `default`() -> AssociateObject {
+        AssociateObject()
+    }
+    private var cache = NSCache<AnyObject, AnyObject>()
+    
+    func set(_ target: AnyObject, with associateObject: AnyObject) {
+        cache.setObject(target, forKey: associateObject)
+    }
+    func get(_ target: AnyObject) -> AnyObject {
+        cache.object(forKey: target)!
+    }
+    private class Inner {
+        internal init(_ any: Any) {
+            self.any = any
+        }
+        var any: Any
+    }
+}
 
+```
+拖過這樣的思想，我們可以理解 Objective-C runtime 如何達成讓類別感覺起來有新的 property。
+
+## 簡單測驗
+1. 幾乎所有的 Extension 都可以使用 Delegattion 達成，請說明你有什麼程式碼使用了 Extension 而不是使用 Delegation？
+2. [進階] 請說明使用 Extension 與 Delegation 的出發點(目的)是什麼？
