@@ -33,6 +33,7 @@ Photo by [@agkdesign](https://unsplash.com/@agkdesign) on [Unsplash](https://uns
 
 
 ## 簡單測驗
-1. Swift Int 需要 對應到 Objective-C 的哪個型別？
-2. Swift Int 需要 對應到 C 語言的哪個型別？
-3. [進階] Xcode 有機會對 C++ 的程式碼產生 Swift interface 嗎？
+1. 說說看為什麼需要 Swift friendly 的程式碼？
+2. Swift Int 需要 對應到 Objective-C 的哪個型別？
+3. Swift Int 需要 對應到 C 語言的哪個型別？
+4. [進階] Xcode 有機會對 C++ 的程式碼產生 Swift interface 嗎？
