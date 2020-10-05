@@ -113,7 +113,7 @@
 		9AB8D6E524B9B7EA00515002 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9AD4FB212504CAFE00DB1F00 /* [07] Objective-C 的基本 C 語言 library 使用.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "[07] Objective-C 的基本 C 語言 library 使用.md"; sourceTree = "<group>"; };
 		9AD4FB242504FA4C00DB1F00 /* [08] Objective-C 的基本困難 C 語言 malloc、free .md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "[08] Objective-C 的基本困難 C 語言 malloc、free .md"; sourceTree = "<group>"; };
-		9AD4FB252504FB9C00DB1F00 /* [10]  Objective-C 的基本困難 C 語言 Preprocessor.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "[10]  Objective-C 的基本困難 C 語言 Preprocessor.md"; sourceTree = "<group>"; };
+		9AD4FB252504FB9C00DB1F00 /* [10] Objective-C 的基本困難 C 語言 Preprocessor.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "[10] Objective-C 的基本困難 C 語言 Preprocessor.md"; sourceTree = "<group>"; };
 		9AD4FB262504FBE800DB1F00 /* [09] Objective-C 的基本困難 C 語言 自定義 Header.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "[09] Objective-C 的基本困難 C 語言 自定義 Header.md"; sourceTree = "<group>"; };
 		9AECB796250E623B00125025 /* [17] Objective-C 物件的Protocol 與 type casting.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "[17] Objective-C 物件的Protocol 與 type casting.md"; sourceTree = "<group>"; };
 		9AECB797250E623B00125025 /* [20] Objective-C 物件的特殊 Selector.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "[20] Objective-C 物件的特殊 Selector.md"; sourceTree = "<group>"; };
@@ -141,16 +141,16 @@
 		A79D67C524BEFCDC00E2903C /* [02] Objective-C 的 C 語言部分.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = "[02] Objective-C 的 C 語言部分.md"; sourceTree = "<group>"; };
 		A7BA6EAE24F2485E0024205A /* [06] Objective-C 的基本 C 語言 control flow.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "[06] Objective-C 的基本 C 語言 control flow.md"; sourceTree = "<group>"; };
 		A7FAF60924C9394400458A91 /* [04] Objective-C 的基本 C 語言聚合型別.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = "[04] Objective-C 的基本 C 語言聚合型別.md"; sourceTree = "<group>"; };
-		A7FCD22625248F470063DAD8 /* [22] Objective-C.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "[22] Objective-C.md"; sourceTree = "<group>"; };
-		A7FCD22725248F470063DAD8 /* [25] Objective-C.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "[25] Objective-C.md"; sourceTree = "<group>"; };
-		A7FCD22825248F470063DAD8 /* [30] Objective-C.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "[30] Objective-C.md"; sourceTree = "<group>"; };
-		A7FCD22925248F480063DAD8 /* [23] Objective-C.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "[23] Objective-C.md"; sourceTree = "<group>"; };
-		A7FCD22A25248F480063DAD8 /* [27] Objective-C.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "[27] Objective-C.md"; sourceTree = "<group>"; };
-		A7FCD22B25248F480063DAD8 /* [26] Objective-C.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "[26] Objective-C.md"; sourceTree = "<group>"; };
-		A7FCD22C25248F480063DAD8 /* [28] Objective-C.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "[28] Objective-C.md"; sourceTree = "<group>"; };
-		A7FCD22D25248F480063DAD8 /* [24] Objective-C.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "[24] Objective-C.md"; sourceTree = "<group>"; };
-		A7FCD22E25248F480063DAD8 /* [21] Objective-C.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "[21] Objective-C.md"; sourceTree = "<group>"; };
-		A7FCD22F25248F480063DAD8 /* [29] Objective-C.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "[29] Objective-C.md"; sourceTree = "<group>"; };
+		A7FCD22625248F470063DAD8 /* [22] Swift friendly 的基本型別.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "[22] Swift friendly 的基本型別.md"; sourceTree = "<group>"; };
+		A7FCD22725248F470063DAD8 /* [25] Swift friendly 的 Optional .md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "[25] Swift friendly 的 Optional .md"; sourceTree = "<group>"; };
+		A7FCD22825248F470063DAD8 /* [30] Swift friendly 那些我不懂的部分.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "[30] Swift friendly 那些我不懂的部分.md"; sourceTree = "<group>"; };
+		A7FCD22925248F480063DAD8 /* [23] Swift friendly 的 Enum.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "[23] Swift friendly 的 Enum.md"; sourceTree = "<group>"; };
+		A7FCD22A25248F480063DAD8 /* [27] Swift friendly 的 convenience init.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "[27] Swift friendly 的 convenience init.md"; sourceTree = "<group>"; };
+		A7FCD22B25248F480063DAD8 /* [26] Swift friendly 的 Error handling.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "[26] Swift friendly 的 Error handling.md"; sourceTree = "<group>"; };
+		A7FCD22C25248F480063DAD8 /* [28] Swift friendly 的 API Swift name.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "[28] Swift friendly 的 API Swift name.md"; sourceTree = "<group>"; };
+		A7FCD22D25248F480063DAD8 /* [24] Swift friendly 的 泛型.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "[24] Swift friendly 的 泛型.md"; sourceTree = "<group>"; };
+		A7FCD22E25248F480063DAD8 /* [21] Swift friendly 的目的是什麼 (auto interface).md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "[21] Swift friendly 的目的是什麼 (auto interface).md"; sourceTree = "<group>"; };
+		A7FCD22F25248F480063DAD8 /* [29] Swift friendly 的 C 語言部分.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "[29] Swift friendly 的 C 語言部分.md"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -323,7 +323,7 @@
 				9AD4FB212504CAFE00DB1F00 /* [07] Objective-C 的基本 C 語言 library 使用.md */,
 				9AD4FB242504FA4C00DB1F00 /* [08] Objective-C 的基本困難 C 語言 malloc、free .md */,
 				9AD4FB262504FBE800DB1F00 /* [09] Objective-C 的基本困難 C 語言 自定義 Header.md */,
-				9AD4FB252504FB9C00DB1F00 /* [10]  Objective-C 的基本困難 C 語言 Preprocessor.md */,
+				9AD4FB252504FB9C00DB1F00 /* [10] Objective-C 的基本困難 C 語言 Preprocessor.md */,
 				9AECB79A250E623B00125025 /* [11] Objective-C 物件的的編寫.md */,
 				9AECB79C250E623B00125025 /* [12] Objective-C 物件的封裝.md */,
 				9AECB79F250E623C00125025 /* [13] Objective-C 物件的繼承.md */,
@@ -334,16 +334,16 @@
 				9AECB799250E623B00125025 /* [18] Objective-C 物件的extension 與 Categories.md */,
 				9AECB798250E623B00125025 /* [19] Objective-C 物件的特殊 Block.md */,
 				9AECB797250E623B00125025 /* [20] Objective-C 物件的特殊 Selector.md */,
-				A7FCD22E25248F480063DAD8 /* [21] Objective-C.md */,
-				A7FCD22625248F470063DAD8 /* [22] Objective-C.md */,
-				A7FCD22925248F480063DAD8 /* [23] Objective-C.md */,
-				A7FCD22D25248F480063DAD8 /* [24] Objective-C.md */,
-				A7FCD22725248F470063DAD8 /* [25] Objective-C.md */,
-				A7FCD22B25248F480063DAD8 /* [26] Objective-C.md */,
-				A7FCD22A25248F480063DAD8 /* [27] Objective-C.md */,
-				A7FCD22C25248F480063DAD8 /* [28] Objective-C.md */,
-				A7FCD22F25248F480063DAD8 /* [29] Objective-C.md */,
-				A7FCD22825248F470063DAD8 /* [30] Objective-C.md */,
+				A7FCD22E25248F480063DAD8 /* [21] Swift friendly 的目的是什麼 (auto interface).md */,
+				A7FCD22625248F470063DAD8 /* [22] Swift friendly 的基本型別.md */,
+				A7FCD22925248F480063DAD8 /* [23] Swift friendly 的 Enum.md */,
+				A7FCD22D25248F480063DAD8 /* [24] Swift friendly 的 泛型.md */,
+				A7FCD22725248F470063DAD8 /* [25] Swift friendly 的 Optional .md */,
+				A7FCD22B25248F480063DAD8 /* [26] Swift friendly 的 Error handling.md */,
+				A7FCD22A25248F480063DAD8 /* [27] Swift friendly 的 convenience init.md */,
+				A7FCD22C25248F480063DAD8 /* [28] Swift friendly 的 API Swift name.md */,
+				A7FCD22F25248F480063DAD8 /* [29] Swift friendly 的 C 語言部分.md */,
+				A7FCD22825248F470063DAD8 /* [30] Swift friendly 那些我不懂的部分.md */,
 			);
 			path = Articles;
 			sourceTree = "<group>";
