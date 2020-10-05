@@ -17,12 +17,8 @@
 		9AB8D6BD24B9B78A00515002 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AB8D6BC24B9B78A00515002 /* main.m */; };
 		9AB8D6C724B9B78B00515002 /* objc_iOSTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AB8D6C624B9B78B00515002 /* objc_iOSTests.m */; };
 		9AB8D6DD24B9B7EA00515002 /* Core.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AB8D6D424B9B7E900515002 /* Core.framework */; };
-		9AB8D6E624B9B7EA00515002 /* Core.h in Headers */ = {isa = PBXBuildFile; fileRef = 9AB8D6D624B9B7E900515002 /* Core.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9AB8D6E924B9B7EA00515002 /* Core.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AB8D6D424B9B7E900515002 /* Core.framework */; };
 		9AB8D6EA24B9B7EA00515002 /* Core.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9AB8D6D424B9B7E900515002 /* Core.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		9AFE9F9824B9B83D0040EAF7 /* MyMath.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AFE9F9624B9B83D0040EAF7 /* MyMath.m */; };
-		9AFE9F9924B9B83D0040EAF7 /* MyMath.h in Headers */ = {isa = PBXBuildFile; fileRef = 9AFE9F9724B9B83D0040EAF7 /* MyMath.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9AFE9F9F24B9B8D90040EAF7 /* CoreTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AFE9F9E24B9B8D90040EAF7 /* CoreTests.m */; };
 		A720CEBA24C7DC0D00A6617D /* [03] Objective-C 的基本 C 語言型別.md in Resources */ = {isa = PBXBuildFile; fileRef = A720CEB924C7DC0D00A6617D /* [03] Objective-C 的基本 C 語言型別.md */; };
 		A787CCB124D174720030B1A8 /* [05] Objective-C 的基本 C 語言 Function.md in Resources */ = {isa = PBXBuildFile; fileRef = A787CCB024D174720030B1A8 /* [05] Objective-C 的基本 C 語言 Function.md */; };
 		A79D678724BECF8500E2903C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A79D678624BECF8500E2903C /* main.m */; };
@@ -107,10 +103,7 @@
 		9AB8D6C624B9B78B00515002 /* objc_iOSTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = objc_iOSTests.m; sourceTree = "<group>"; };
 		9AB8D6C824B9B78B00515002 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9AB8D6D424B9B7E900515002 /* Core.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Core.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		9AB8D6D624B9B7E900515002 /* Core.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Core.h; sourceTree = "<group>"; };
-		9AB8D6D724B9B7E900515002 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9AB8D6DC24B9B7E900515002 /* CoreTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoreTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		9AB8D6E524B9B7EA00515002 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9AD4FB212504CAFE00DB1F00 /* [07] Objective-C 的基本 C 語言 library 使用.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "[07] Objective-C 的基本 C 語言 library 使用.md"; sourceTree = "<group>"; };
 		9AD4FB242504FA4C00DB1F00 /* [08] Objective-C 的基本困難 C 語言 malloc、free .md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "[08] Objective-C 的基本困難 C 語言 malloc、free .md"; sourceTree = "<group>"; };
 		9AD4FB252504FB9C00DB1F00 /* [10] Objective-C 的基本困難 C 語言 Preprocessor.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "[10] Objective-C 的基本困難 C 語言 Preprocessor.md"; sourceTree = "<group>"; };
@@ -125,9 +118,6 @@
 		9AECB79D250E623B00125025 /* [16] Objective-C 物件的Optional chaining.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "[16] Objective-C 物件的Optional chaining.md"; sourceTree = "<group>"; };
 		9AECB79E250E623C00125025 /* [14] Objective-C 物件的多型.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "[14] Objective-C 物件的多型.md"; sourceTree = "<group>"; };
 		9AECB79F250E623C00125025 /* [13] Objective-C 物件的繼承.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "[13] Objective-C 物件的繼承.md"; sourceTree = "<group>"; };
-		9AFE9F9624B9B83D0040EAF7 /* MyMath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyMath.m; sourceTree = "<group>"; };
-		9AFE9F9724B9B83D0040EAF7 /* MyMath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyMath.h; sourceTree = "<group>"; };
-		9AFE9F9E24B9B8D90040EAF7 /* CoreTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreTests.m; sourceTree = "<group>"; };
 		9AFE9FA024B9BD800040EAF7 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		9AFE9FA224B9C3090040EAF7 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		A720CEB924C7DC0D00A6617D /* [03] Objective-C 的基本 C 語言型別.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = "[03] Objective-C 的基本 C 語言型別.md"; sourceTree = "<group>"; };
@@ -223,8 +213,6 @@
 		9AA675D624B9EA6600091283 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				9AB8D6D524B9B7E900515002 /* Core */,
-				9AB8D6E224B9B7EA00515002 /* CoreTests */,
 			);
 			path = Frameworks;
 			sourceTree = "<group>";
@@ -280,34 +268,6 @@
 				9AB8D6C824B9B78B00515002 /* Info.plist */,
 			);
 			path = objc_iOSTests;
-			sourceTree = "<group>";
-		};
-		9AB8D6D524B9B7E900515002 /* Core */ = {
-			isa = PBXGroup;
-			children = (
-				9AB8D6D624B9B7E900515002 /* Core.h */,
-				9AFE9F9524B9B83D0040EAF7 /* Math */,
-				9AB8D6D724B9B7E900515002 /* Info.plist */,
-			);
-			path = Core;
-			sourceTree = "<group>";
-		};
-		9AB8D6E224B9B7EA00515002 /* CoreTests */ = {
-			isa = PBXGroup;
-			children = (
-				9AFE9F9E24B9B8D90040EAF7 /* CoreTests.m */,
-				9AB8D6E524B9B7EA00515002 /* Info.plist */,
-			);
-			path = CoreTests;
-			sourceTree = "<group>";
-		};
-		9AFE9F9524B9B83D0040EAF7 /* Math */ = {
-			isa = PBXGroup;
-			children = (
-				9AFE9F9624B9B83D0040EAF7 /* MyMath.m */,
-				9AFE9F9724B9B83D0040EAF7 /* MyMath.h */,
-			);
-			path = Math;
 			sourceTree = "<group>";
 		};
 		9AFE9FA124B9C2DD0040EAF7 /* Articles */ = {
@@ -391,8 +351,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9AFE9F9924B9B83D0040EAF7 /* MyMath.h in Headers */,
-				9AB8D6E624B9B7EA00515002 /* Core.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -601,7 +559,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9AFE9F9824B9B83D0040EAF7 /* MyMath.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -609,7 +566,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9AFE9F9F24B9B8D90040EAF7 /* CoreTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
