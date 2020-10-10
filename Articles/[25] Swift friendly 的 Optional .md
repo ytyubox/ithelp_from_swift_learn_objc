@@ -25,16 +25,63 @@ Swift 的 optional 是一個很有趣的概念，因為在 Objective-C 與 C 語
 
 
 |imports into Swift as | Methods and properties| Any Pointer |
+|-|-|-|
 |MyClass|nonnull| _Nonnull |
 |MyClass?| nullable| _Nullable |
 |MyClass!| null_unspecified | _Null_unspecified|
 
 > 表格來自 WWDC 2020 - [Refine Objective-C frameworks for Swift](https://developer.apple.com/videos/play/wwdc2020/10680/) 
 
+### nullable 與 null_unspecified 作用域是在 properties 與 Methods
 
 
-@property(nullable) NSString* name;
+```objectivec
+// Objective-C
+/* Atemplate.h */
+NS_ASSUME_NONNULL_BEGIN
+@interface ATemplate: NSObject
+@property(nullable) aNullableProperty;
+-(nonull instan)
 -(nonnull instancetype) initWithName(nullable NSString*)name;
+@end
+NS_ASSUME_NONNULL_END
+```
+```swift
+// Swift interface
+import Foundation
 
+open class Atemplate : NSObject {
+
+    open var aNullableProperty: NSNumber?
+
+    public init(name: String?)
+}
+
+```
+
+### 而全域變數或是 Any(id)，
+
+```objectivec
+NSString* _Nonnull  NoneNullString = @"";
+```
+
+```swift
+// Swift interface
+public let NoneNullString: String
+```
+
+```objectivec
+@interface Atemplate: NSObject
+...
+-(BOOL) resource:(id _Nullable * _Nonnull)outValue;
+@end
+```
+```swift
+class Atemplate{
+    ...
+    open func resource(_ outValue: AutoreleasingUnsafeMutablePointer<AnyObject?>) -> Bool
+}
+```
 ## 簡單測驗
 1. 請說明使用 MYClass! 的時機是什麼？
+2. [進階] 請說明  `(id _Nullable * _Nonnull)` 的意思是什麼？ 其所對應 Swift 的 `AutoreleasingUnsafeMutablePointer` 是什麼？
