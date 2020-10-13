@@ -6,3 +6,9 @@ Photo by [@jontyson](https://unsplash.com/@jontyson) on [Unsplash](https://unspl
 
 在 Objective-C 與 Swift 的命名有明顯的區別，雖然 Swift interface 可以將 Objective-C 的 API 以一定程度的方式改寫為 Swift 命名方式。
 
+```objectivec
+// Objective-C
+-(void);
+```
+```swift
+```
